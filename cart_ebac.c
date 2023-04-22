@@ -126,6 +126,7 @@ int main(){
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n\n\n");
+		printf("\t0 - Sair\n\n");
 		printf("Opção: ");
 
 		scanf("%d", &opcao); //armazena a escolha do user "%d"==inteiro, &variavel referida
@@ -144,6 +145,11 @@ int main(){
 			case 3:
 			deletar();
 			break;
+
+			case 0:
+            printf("Saindo...\n");
+            return 0;
+            break;
 
 			default:
 			printf("Essa opção não está disponível.\n\nEscolha uma das 3 opções:\n\n");
